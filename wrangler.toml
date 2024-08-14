@@ -1,8 +1,9 @@
 name = "blog"
 compatibility_date = "2024-08-14"
 
-# [vars]
-# MY_VAR = "my-variable"
+ [vars]
+DATABASE_URL = "DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYWRkYjU3ZGEtN2M4Zi00MjQ1LTg4MjItMmZiNzdkOGY2YmQzIiwidGVuYW50X2lkIjoiNDNjOWEyOGVmYjQzYjE4NGMwN2VjMTM4NTlkNmM4YzhjMmQ2Mjc2OTYyMDJlYzA2NzU1OGI0ZmUxOTc3MjM5ZCIsImludGVybmFsX3NlY3JldCI6IjhhODM2MDZjLWM2MWEtNDA4YS1iZDBiLWQ1OTY0NTYxNjJiNCJ9.blK43ORyCJ5qAMVZ3vfvpfzCA-hvpXxwtrRTrwSnw8M"
+DIRECT_URL="<YOUR_DATABASE_CONNECTION_STRING>""
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
