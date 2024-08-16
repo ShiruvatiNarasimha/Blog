@@ -2,7 +2,7 @@ import { signinInput, signupInput } from "@shiruvati_narasimha/medium-common";
 import { Hono } from "hono";
 import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
-import { decode, sign, verify } from 'hono/jwt';
+import { sign } from 'hono/jwt';
 
 
 export const userRouter = new Hono<{
