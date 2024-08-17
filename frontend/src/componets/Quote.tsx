@@ -11,7 +11,7 @@ export const Quote = () => {
                     Julies winfield
         </div>
         <div className="max-w-md  text-sm font-light text-slate-400">
-            CEO | Acne corp
+            CEO | Shiruvati Narasimha
         </div>
             </div>
         </div>
