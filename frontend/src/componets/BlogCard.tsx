@@ -5,16 +5,16 @@ interface BlogCardProps {
     publishedDate: string;
 }
 
-export const BlogCard = ({
-    authorName,
-    title,
-    content,
-    publishedDate
-
-}: BlogCardProps) => {
+export const BlogCard = ({authorName, title, content, publishedDate}: BlogCardProps) => {
     return <div>
-        <div>
-            {authorName}. {publishedDate}
+        <div className="flex">
+            <div className="flex justify-center felx-col">
+            <Avatar name={authorName}/>
+            </div>
+           <div className="font-extralight">{authorName} </div>
+           <div className="pl-2 font-thin font-slate-200">
+           {publishedDate}
+           </div>
         </div>
         <div>
             {title}
@@ -25,5 +25,20 @@ export const BlogCard = ({
         <div>
             {`${Math.ceil(content.length / 100)} minutes`}
         </div>
+
+        <div className="bg-slate-400 h-1 w-full">
+
+        </div>
     </div>
 }
+
+
+function Avatar ({name}: {name : string}) {
+    return  <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+    <span className="font-medium text-gray-600 dark:text-gray-300">
+        {name[0]}
+    </span>
+</div>
+    
+    
+} 

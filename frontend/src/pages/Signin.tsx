@@ -1,6 +1,4 @@
 import { Auth } from "../componets/Auth"
-import { Quote } from "../componets/Quote"
-
 
 export const Signin = () => {
     return <div>
@@ -8,7 +6,7 @@ export const Signin = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex justify-between h-16">
       <div className="flex-shrink-0 flex items-center font-extrabold from-zinc-950">
-          Blog 
+          Welcome To Bloging 
       </div>
       <div className="flex items-center">
         <a href="#" className="text-black px-3 py-2 rounded-md text-sm font-extrabold">Home</a>
@@ -21,9 +19,6 @@ export const Signin = () => {
         <div className="h-screen bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 grid-cols-2">
             <div>
               <Auth type="signin"/>
-            </div>
-            <div className="invisible lg:visible">
-                <Quote/>
             </div>
         </div>
     </div>

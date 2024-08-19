@@ -28,10 +28,10 @@ export const Auth = ( {type}:{type: "signup" | "signin"}) => {
     
     return <div className="h-screen flex justify-center flex-col">
         <div className="flex justify-center">
-        <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+        <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 ">
            <div>
               <div className="px-10">
-                 <div className="text-3xl font-extrabold">
+                 <div className="text-2xl font-extrabold">
                      Create an account
                  </div>
                  <div className="text-slate-600">
@@ -62,10 +62,11 @@ export const Auth = ( {type}:{type: "signup" | "signin"}) => {
            }}/>           
             </div>
             <div>
-     <button onClick={sendRequest} type="button" className="m-10 w-64 text-white bg-gray-800 hover:bg-gray-900 
+           <button onClick={sendRequest} type="button" className="m-10 w-64 text-white bg-gray-800 hover:bg-gray-900 
            focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg 
            text-sm  py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700
-         dark:focus:ring-gray-700 dark:border-gray-700">{type === "signup" ? "Sig up": "Signin"}</button>
+         dark:focus:ring-gray-700 dark:border-gray-700">{type === "signup" ? "Signup": "Signin"}
+          </button>
          </div>
            </div>
         </a>
