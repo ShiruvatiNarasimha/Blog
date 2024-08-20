@@ -3,7 +3,7 @@ import { BlogCard } from "../componets/BlogCard"
 
 export const Blogs = () => {
     return <div>
-        <Appbar/>
+         <Appbar/>
     <div className="flex justify-center pt-10">
     <div className="max-w-xl">
         <BlogCard
