@@ -6,7 +6,7 @@ interface BlogCardProps {
 }
 
 export const BlogCard = ({authorName, title, content, publishedDate}: BlogCardProps) => {
-    return <div className="border border-slate-200 pb-4">
+    return <div className="border-b border-slate-200 pb-4 pt-8">
         <div className="flex">
             <div className="flex justify-center felx-col">
             <Avatar name={authorName}/>
@@ -30,7 +30,7 @@ export const BlogCard = ({authorName, title, content, publishedDate}: BlogCardPr
 
 
 
-function Avatar ({name}: {name : string}) {
+ export function Avatar ({name}: {name : string}) {
     return  <div className="relative inline-flex items-center justify-center w-5 h-5 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
     <span className="font-medium text-gray-600 dark:text-gray-300">
         {name[0]}
