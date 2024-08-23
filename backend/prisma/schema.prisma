@@ -27,5 +27,6 @@ datasource db {
   authorId    Int 
   content     String
   title       String
+  published Boolean  @default(false)
   author User   @relation(fields: [authorId], references: [id])
  }

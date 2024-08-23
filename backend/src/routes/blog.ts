@@ -1,4 +1,4 @@
-import { createBlogInput, updateBlogInput } from "@shiruvati_narasimha/medium-common";
+import { updateBlogInput , createBlogInput} from '@shiruvati_narasimha/medium-common';
 import { PrismaClient } from "@prisma/client/edge";
 import { withAccelerate } from "@prisma/extension-accelerate";
 import { Hono } from "hono";
